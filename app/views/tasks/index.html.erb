@@ -6,6 +6,7 @@
     <li>
       <h3><strong><%= task.title %></strong></h3>
       <p><em><%= task.details %></em></p>
+      <%= link_to "Edit", edit_task_path(task) %>
     </li>
   <% end %>
 </ul> 

@@ -1,8 +1,4 @@
 <h1>Welcome to my app</h1>
 <p>...</p>
 
-<ul>
-  <% @tasks.each do |task| %>
-    <li><%= task %></li>
-  <% end %>
-</ul>
+<%= link_to 'Look at your tasks', tasks_path%>

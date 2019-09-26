@@ -1,0 +1,5 @@
+<h3><%= @task.title %></h3>
+<p><em><%= @task.details %></em></p>
+<%= link_to "Edit", edit_task_path(@task) %><br>
+<%= link_to "Delete", task_path(@task), method: :delete %><br>
+<%= link_to 'Back', tasks_path %><br>

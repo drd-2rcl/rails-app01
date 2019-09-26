@@ -4,6 +4,7 @@
   <% @tasks.each do |task| %>
     <li>
       <strong><%= link_to task.title, task_path(task) %></strong>
+      <p>Completed:<%= task.completed %></p>
     </li>
   <% end %>
 </ul> 

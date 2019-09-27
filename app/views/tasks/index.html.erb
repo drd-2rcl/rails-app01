@@ -4,7 +4,8 @@
   <% @tasks.each do |task| %>
     <li>
       <strong><%= link_to task.title, task_path(task) %></strong>
-      <p>Completed:<%= task.completed %></p>
+      <%= link_to check_box_tag(:task, :completed, task.completed), 
+                "/tasks/#{task.id}/complete/#{!task.completed}" %>
     </li>
   <% end %>
 </ul> 
